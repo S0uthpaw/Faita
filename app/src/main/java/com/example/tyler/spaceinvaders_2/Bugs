@@ -1,0 +1,10 @@
+* Buttons are very slow when switching between activities
+
+* After opening options activity and navigating back to the main menu, the exit button on MM
+    takes the app back to the options screen rather than closing app. It possibly has something to
+    do with both buttons existing in the same screen space. The exit button functions normally if
+    you open options, navigate back with the Android back button, and then click exit as well as if
+    you open the main game activity and navigate back with the Android back button.
+
+* All buttons take 2 clicks to execute whatever code they are suppose to
+
