@@ -16,16 +16,6 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
-
-
-    }
-
-    public void onClickExit(View v) {
-        finish();
-        System.exit(0);
-    }
-
-    public void onClickOptions(View v){
         butOptions = (Button)findViewById(R.id.butOptions);
         butOptions.setOnClickListener(new View.OnClickListener(){
 
@@ -35,8 +25,6 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(act);
             }
         });
-    }
-    public void init(View view) {
         but1 = (Button)findViewById(R.id.but1);
         but1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +33,26 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(act);
             }
         });
+        if( getIntent().getBooleanExtra("Exit me", false)){
+            finish();
+            return;
+        }
+    }
+
+    public void onClickExit(View v) {
+        Intent intent = new Intent(this, MainMenu.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("Exit me", true);
+        startActivity(intent);
+        finish();
+
+    }
+
+    public void onClickOptions(View v){
+
+    }
+    public void init(View view) {
+
     }
 
 

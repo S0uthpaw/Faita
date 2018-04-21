@@ -38,9 +38,7 @@ public class OptionsActivity extends AppCompatActivity {
                 audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, arg1, 0);
             }
         });
-    }
 
-    public void onClickBack(View v){
         butBack = (ImageButton)findViewById(R.id.butBack);
         butBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,5 +47,9 @@ public class OptionsActivity extends AppCompatActivity {
                 startActivity(act);
             }
         });
+    }
+
+    public void onClickBack(View v){
+        finish();
     }
 }
