@@ -1,3 +1,11 @@
+TODO:
+
+
+
+
+---------------------------------------------------------------
+Fixed:
+
 * Buttons are very slow when switching between activities
 
 * After opening options activity and navigating back to the main menu, the exit button on MM
