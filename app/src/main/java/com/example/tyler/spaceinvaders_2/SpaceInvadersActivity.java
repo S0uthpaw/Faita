@@ -1,6 +1,7 @@
 package com.example.tyler.spaceinvaders_2;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.view.Display;
@@ -18,6 +19,10 @@ public class SpaceInvadersActivity extends Activity {
     // It will also hold the logic of the game
     // and respond to screen touches
     SpaceInvadersView spaceInvadersView;
+
+    public SpaceInvadersActivity() {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
