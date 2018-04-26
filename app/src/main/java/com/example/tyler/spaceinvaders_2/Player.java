@@ -24,7 +24,7 @@ public class Player {
         y = screenY - 20;
 
         // Initialize the bitmap
-        bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.playership);
+        bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.thefaitaship);
 
         // stretch the bitmap to a size appropriate for the screen resolution
         bitmap = Bitmap.createScaledBitmap(bitmap,
