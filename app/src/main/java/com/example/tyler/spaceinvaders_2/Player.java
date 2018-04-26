@@ -16,8 +16,8 @@ public class Player {
         // Initialize a blank RectF
         rect = new RectF();
 
-        length = screenX/10;
-        height = screenY/10;
+        length = screenX/8;
+        height = screenY/8;
 
         // Start ship in center
         x = screenX / 2;
