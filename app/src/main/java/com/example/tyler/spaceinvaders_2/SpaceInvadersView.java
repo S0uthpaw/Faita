@@ -170,6 +170,8 @@ public class SpaceInvadersView extends SurfaceView implements Runnable {
                     }
                 }
 
+
+
                 // Increase the menace level
                 // By making the sounds more frequent
                 menaceInterval = menaceInterval - 80;
