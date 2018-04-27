@@ -10,12 +10,12 @@ import android.graphics.RectF;
  */
 
 public class Player {
+    int width;
 
     public Player(Context context, int screenX, int screenY){
 
         // Initialize a blank RectF
         rect = new RectF();
-
         length = screenX/8;
         height = screenY/8;
 
@@ -72,7 +72,13 @@ public class Player {
         if(shipMoving == RIGHT){
             x = x + shipSpeed / fps;
         }
-
+        // Prevents the player from going beyond the edge of the screen
+        if(shipMoving == LEFT && x < 0){
+            shipMoving = STOPPED;
+        }
+        if(shipMoving == RIGHT && x > length*7){
+            shipMoving = STOPPED;
+        }
         // Update rect which is used to detect hits
         rect.top = y;
         rect.bottom = y + height;

@@ -19,7 +19,7 @@ public class Projectile {
 
     // Going nowhere
     int heading = -1;
-    float speed =  350;
+    float speed =  550;
 
     private int width = 1;
     private int height;

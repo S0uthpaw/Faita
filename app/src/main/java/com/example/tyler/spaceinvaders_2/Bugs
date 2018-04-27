@@ -4,8 +4,10 @@ Implement:
 * Enemy ship 1,2,3,4
 * Main menu
 * Boss ship (if room)
+* Edge preventing player moving off screen
 
-
+Problems:
+* Player ship sometimes slides in direction that was previously selected
 
 
 ---------------------------------------------------------------
