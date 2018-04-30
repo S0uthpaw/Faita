@@ -1,0 +1,7 @@
+ // Initialize the bitmap
+        bitmap1 = BitmapFactory.decodeResource(context.getResources(), R.drawable.invader_up);
+        bitmap2 = BitmapFactory.decodeResource(context.getResources(), R.drawable.invader_down);
+        bitmap_enemy4 = BitmapFactory.decodeResource(context.getResources(), R.drawable.enemy_4);
+        
+        
+private void update() add comment code
