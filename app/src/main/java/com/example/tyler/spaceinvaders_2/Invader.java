@@ -57,8 +57,8 @@ public class Invader {
         y = row * (length + padding/4);
 
         // Initialize the bitmap
-        bitmap1 = BitmapFactory.decodeResource(context.getResources(), R.drawable.invader_up);
-        bitmap2 = BitmapFactory.decodeResource(context.getResources(), R.drawable.invader_down);
+        bitmap1 = BitmapFactory.decodeResource(context.getResources(), R.drawable.enemy_1);
+        bitmap2 = BitmapFactory.decodeResource(context.getResources(), R.drawable.enemy_1_2);
 
         // stretch the first bitmap to a size appropriate for the screen resolution
         bitmap1 = Bitmap.createScaledBitmap(bitmap1,

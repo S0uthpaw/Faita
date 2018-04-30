@@ -20,7 +20,7 @@ public class Defense {
         isVisible = true;
 
         // Sometimes a proj slips through this padding.
-        // Setto zero if this is problematic
+        // Set to zero if this is problematic
         int brickPadding = 1;
 
         // The number of shelters
